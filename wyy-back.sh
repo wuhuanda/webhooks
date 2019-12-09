@@ -7,9 +7,9 @@ git clean -f
 echo "拉取最新代码"
 git pull origin master
 echo "开始构建镜像"
-docker build -t wyy-back .
+docker build -t wyy-back:1.0 .
 echo "删除旧容器"
 docker stop wyy-back-container
 docker rm wyy-back-container
 echo "启动新容器"
-docker container run -p 3000:3000 -d --name wyy-back-container wyy-back
+docker container run -p 3000:3000 -d --name wyy-back-container wyy-back:1.0
