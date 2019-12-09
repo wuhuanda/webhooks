@@ -4,13 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start ./webhook.js --watch --name='wyy-webhook'",
-    "stop": "pm2 stop wyy-webhook"
+    "start": "pm2 start ./webhook.js --name webhook --watch",
+    "stop": "pm2 stop webhook"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "nodemailer": "^6.3.0"
   }
 }
