@@ -11,5 +11,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "sendmail": "^1.6.1"
   }
 }
