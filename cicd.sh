@@ -1,5 +1,5 @@
 #!/bin/bash
-WORK_PATH='~/workplace/NeteaseCloudMusicApi'
+WORK_PATH='~/workplace/netease-cloud-music-api'
 cd $WORK_PATH
 echo "清理后台代码"
 git reset --hard origin/master
