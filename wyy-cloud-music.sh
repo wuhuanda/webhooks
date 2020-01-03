@@ -14,4 +14,4 @@ echo "删除旧容器"
 docker stop wyy-cloud-music-container
 docker rm wyy-cloud-music-container
 echo "启动新容器"
-docker container run -p 800:800 -d --name wyy-cloud-music-container -d wyy-cloud-music:1.0
+docker container run -p 80:80 -d --name wyy-cloud-music-container -d wyy-cloud-music:1.0
