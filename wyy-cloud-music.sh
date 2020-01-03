@@ -9,9 +9,9 @@ git pull origin master
 echo "打包最新代码"
 npm run build
 echo "开始构建镜像"
-docker build -t wyy-cloud-music:1.0 .
+docker build -t wyy-cloud-music:1.0
 echo "删除旧容器"
 docker stop wyy-cloud-music-container
 docker rm wyy-cloud-music-container
 echo "启动新容器"
-docker container run -p 8000:8000 -d --name wyy-cloud-music-container -d wyy-cloud-music:1.0
+docker container run -p 800:800 -d --name wyy-cloud-music-container -d wyy-cloud-music:1.0
